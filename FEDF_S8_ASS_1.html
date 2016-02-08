@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Student Login From</title>
+		<style>
+			body {
+					background-color: #f3f6f8;
+					color: #8b99a0;
+					font-family: arial;
+			}
+			h2 {
+				color: #234465;
+			}
+			p {
+				font-size: 13px;
+			}
+			.registrationForm, .loginForm {
+					float: left;
+					height: 255px;
+					margin: 0 20px 0 0;
+					padding: 20px 30px;
+					width: 240px;
+			}
+			.loginForm {
+					background-color: #234465;
+			}
+			legend {
+					font-size: 14px;
+					font-weight: 600;
+					margin-bottom: 5px;
+					text-transform: uppercase;
+			}
+			.loginForm legend {
+					color: #ffffff;
+			}
+			legend > span {
+				color: #234467;
+			}
+			input {
+					border: 1px solid #d5d5d5;
+					color: #222222;
+					display: block;
+					margin: 15px -10px;
+					padding: 7px 10px;
+					width: 100%;
+			}
+			input[type="checkbox"] {
+					display: inline;
+					margin: 0 5px 0 -10px;
+					width: auto;
+			}
+			input[type="submit"] {
+					background-color: transparent;
+					border: 1px solid #188cef;
+					color: #188cef;
+					float: right;
+					margin: 0 -10px;
+					min-width: 100px;
+					width: auto;
+			}
+			.loginForm input[type="submit"] {
+					border: 1px solid #ffffff;	
+					color: #ffffff;
+			}
+			.checkBoxDiv {
+					color: #ffffff;
+					display: inline-block;
+					font-size: 14px;
+					margin: 10px 0;
+			}
+			.forgotLink {
+					color: #ffffff;
+					display: block;
+					float: right;
+					font-size: 10px;
+					margin: 10px -10px;
+					text-align: right;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>Enter the system</h2>
+		<p>It is necessary to login in your account in order to sign up for a course.</p>
+		<div class="registrationForm">
+			<form>
+				<div>
+					<legend>Are you new? <span>register</span></legend>
+					<input type="text" placeholder="User name" required="true"/>
+					<input type="email" placeholder="Email" required="true"/>
+					<input type="password" placeholder="Password" required="true"/>
+					<input type="password" placeholder="Confirm Password" required="true"/>
+					<input type="submit" value="Register"/>
+				</div>
+			</form>
+		</div>
+		<div class="loginForm">
+			<form>
+				<div>
+					<legend>Already a student? login</legend>
+					<input type="text" placeholder="User name" required="true"/>
+					<input type="password" placeholder="Password" required="true"/>
+					<div class="checkBoxDiv">
+						<input type="checkbox"/>
+						<label>Remember me?</label>
+					</div>
+					<input type="submit" value="Login"/>
+					<a class="forgotLink" href="#">Forgot Password?</a>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
